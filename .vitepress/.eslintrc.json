@@ -1,0 +1,3 @@
+{
+  "extends": ["plugin:@starbeam-dev/library:recommended"]
+}

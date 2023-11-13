@@ -1,0 +1,29 @@
+{
+  "name": "newdocs",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "docs:build": "vitepress build",
+    "docs:dev": "vitepress dev",
+    "docs:preview": "vitepress preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vitepress-plugin-shiki-twoslash": "^0.0.6"
+  },
+  "devDependencies": {
+    "@starbeam-dev/eslint-plugin": "^1.0.4",
+    "eslint": "^8.53.0",
+    "vitepress": "1.0.0-rc.25"
+  },
+  "author": "",
+  "keywords": [],
+  "pnpm": {
+    "overrides": {
+      "remark-shiki-twoslash>shiki": "^0.14.1",
+      "shiki-twoslash>shiki": "^0.14.1"
+    }
+  }
+}
