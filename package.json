@@ -14,16 +14,44 @@
     "vitepress-plugin-shiki-twoslash": "^0.0.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/plugin-syntax-decorators": "^7.23.3",
+    "@babel/plugin-syntax-jsx": "^7.23.3",
+    "@babel/plugin-transform-typescript": "^7.23.3",
+    "@lzilioli/md-macros": "lzilioli/md-macros",
+    "@mdit/plugin-attrs": "^0.6.5",
+    "@mdit/plugin-container": "^0.6.5",
+    "@mdit/plugin-mark": "^0.6.5",
+    "@mdit/plugin-snippet": "^0.6.5",
+    "@mdit/plugin-stylize": "^0.6.5",
+    "@mdit/plugin-tab": "^0.6.5",
     "@starbeam-dev/eslint-plugin": "^1.0.4",
+    "@types/babel__core": "^7.20.4",
+    "@types/markdown-it": "^13.0.6",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/starbeam__collections": "workspace:^",
+    "@types/starbeam__ember": "workspace:^",
+    "@types/starbeam__react": "workspace:^",
+    "@types/starbeam__universal": "workspace:^",
+    "@types/starbeam__vue": "workspace:^",
     "eslint": "^8.53.0",
-    "vitepress": "1.0.0-rc.25"
+    "markdown-it": "^13.0.2",
+    "rollup": "^4.4.1",
+    "typescript": "^5.2.2",
+    "unplugin-fonts": "^1.0.3",
+    "vitepress": "1.0.0-rc.25",
+    "vitepress-plugin-tabs": "^0.4.1",
+    "vue": "^3.3.8"
   },
   "author": "",
   "keywords": [],
   "pnpm": {
     "overrides": {
       "remark-shiki-twoslash>shiki": "^0.14.1",
-      "shiki-twoslash>shiki": "^0.14.1"
+      "rollup": "$rollup",
+      "shiki-twoslash>shiki": "^0.14.1",
+      "typescript": "$typescript"
     }
   }
 }

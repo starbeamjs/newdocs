@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
-    "target": "es2020",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "target": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
     "strict": true
   },
-  "exclude": ["docs"]
+  "include": [
+    "config/**/*.mts",
+    "@types/@*/**/*.d.ts",
+    "docs/**/snippets/**/*.ts",
+    "docs/**/snippets/**/*.tsx",
+    "docs/universal/fundamentals/snippets/reactive-map.snippet.tsx"
+  ],
+  "exclude": [".vitepress/dist", ".vitepress/cache"]
 }

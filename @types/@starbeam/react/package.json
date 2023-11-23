@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "@types/starbeam__react",
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts"
+  }
+}

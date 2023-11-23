@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Starbeam"
-  text: "Reactivity made simple and fun"
-  tagline: My great project tagline
+  text: "Reactivity made simple and fun ✨"
+  tagline: Starbeam is a new kind of reactive library. It makes reactive programming simple and fun, and it works with your existing JavaScript framework.
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

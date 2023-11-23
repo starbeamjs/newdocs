@@ -1,0 +1,37 @@
+:root {
+  --vp-twoslash-c-query-bg: var(--vp-c-bg-soft);
+}
+
+/*
+ * Hide block based on theme
+ * `[class*='-dark']` matches `'vitesse-dark'`
+ * `[class*='-light']` matches `'vitesse-light'`
+ */
+html:not(.dark) pre.shiki[class*="-dark"] {
+  display: none;
+}
+html:not(.dark) pre.shiki[class*="-light"] {
+  display: block;
+}
+html.dark pre.shiki[class*="-dark"] {
+  display: block;
+}
+html.dark pre.shiki[class*="-light"] {
+  display: none;
+}
+
+.shiki {
+  font-weight: 230;
+}
+
+pre.shiki {
+  & div.highlight {
+    background-color: var(--vp-code-line-highlight-color);
+    margin: 0 -24px;
+    padding: 0 24px;
+    width: calc(100% + 2 * 24px);
+  }
+  & div.dim {
+    opacity: 1;
+  }
+}

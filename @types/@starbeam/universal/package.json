@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "@types/starbeam__universal",
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts"
+  }
+}

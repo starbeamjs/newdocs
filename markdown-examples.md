@@ -6,6 +6,12 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
 
+```ts twoslash
+import * as reactive from "@starbeam/collections";
+
+export const x = reactive.Map();
+```
+
 **Input**
 
 ````
