@@ -13,6 +13,8 @@ import { codeSnippet } from "./snippet.mjs";
 
 const root = new URL("..", import.meta.url).pathname;
 
+console.log("Output dir:", join(root, "dist"));
+
 // https://vitepress.dev/reference/site-config
 export default withTwoslash(
   defineConfig({
