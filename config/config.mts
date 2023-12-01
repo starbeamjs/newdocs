@@ -1,5 +1,4 @@
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
 
 import { container } from "@mdit/plugin-container";
 import { mark } from "@mdit/plugin-mark";
@@ -11,16 +10,11 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
 import { codeSnippet } from "./snippet.mjs";
 
-const root = new URL("..", import.meta.url).pathname;
-
-console.log("Output dir:", join(root, "dist"));
-
 // https://vitepress.dev/reference/site-config
 export default withTwoslash(
   defineConfig({
     title: "Starbeam",
     description: "Reactivity made simple and fun",
-    outDir: join(root, "dist"),
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
       nav: [
